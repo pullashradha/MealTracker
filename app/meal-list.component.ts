@@ -19,7 +19,7 @@ import {CalorieCountPipe} from "./calorie-count.pipe";
         <option value="lessThan500" selected="selected">Less Than 500 Calories</option>
         <option value="moreThan500">More Than 500 Calories</option>
       </select>
-      <meal-display *ngFor="#currentMeal of mealList | calorie-count:selectedCalories" (click)="mealClicked(currentMeal)" [meal]="currentMeal"></meal-display>
+      <meal-display *ngFor="#currentMeal of mealList | caloriecount:selectedCalories" (click)="mealClicked(currentMeal)" [meal]="currentMeal"></meal-display>
       <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
       <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal>
     </div>
