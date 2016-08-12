@@ -4,7 +4,6 @@ var concat = require ("gulp-concat");
 var uglify = require ("gulp-uglify");
 var utilities = require ("gulp-util");
 var del = require ("del");
-var jshint = require ("gulp-jshint");
 var sass = require ("gulp-sass");
 var shell = require ("gulp-shell");
 var sourcemaps = require ("gulp-sourcemaps");
@@ -54,13 +53,6 @@ gulp.task ("cssBower", ["cssBowerClean"], function() {
 
 gulp.task ("bower", ["jsBower", "cssBower"]);
 
-//JShint
-gulp.task ("jshint", function() {
-  return gulp.src (["js/*.js"])
-    .pipe (jshint())
-    .pipe (jshint.reporter("default"));
-});
-
 //SASS
 gulp.task ("sassBuild", function() {
   return gulp.src (["resources/styles/*"])
@@ -88,7 +80,7 @@ gulp.task ("tsBuild", ["ts"], function() {
   browserSync.reload();
 });
 
-gulp.task ("jsBuild", ["jshint"], function() {
+gulp.task ("jsBuild", function() {
   browserSync.reload();
 });
 
