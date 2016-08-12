@@ -1,4 +1,4 @@
-import {Component, EventEmitter} from "angular2/core";
+import {Component} from "angular2/core";
 import {Meal} from "./meal.model";
 
 @Component ({
@@ -16,4 +16,7 @@ import {Meal} from "./meal.model";
 
 export class MealComponent {
   public meal: Meal;
+  toggleCalorieCount(setCalories: boolean) {
+    this.meal.calorieCount = setCalories;
+  }
 }
