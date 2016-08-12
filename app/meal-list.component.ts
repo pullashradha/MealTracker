@@ -15,8 +15,8 @@ import {CalorieCountPipe} from "./calorie-count.pipe";
   `
     <div class="meal-list">
       <select (change)="onChange($event.target.value)">
-        <option value="all">Show All</option>
-        <option value="lessThan500" selected="selected">Less Than 500 Calories</option>
+        <option selected="selected" value="all">Show All</option>
+        <option value="lessThan500">Less Than 500 Calories</option>
         <option value="moreThan500">More Than 500 Calories</option>
       </select>
       <meal-display *ngFor="#currentMeal of mealList | caloriecount:selectedCalories" (click)="mealClicked(currentMeal)" [meal]="currentMeal"></meal-display>
@@ -30,7 +30,7 @@ export class MealListComponent {
   public mealList: Meal[];
   public onMealSelect: EventEmitter<Meal>;
   public selectedMeal: Meal;
-  public selectedCalories: string = "lessThan500";
+  public selectedCalories: string = "all";
   constructor() {
     this.onMealSelect = new EventEmitter();
   }
