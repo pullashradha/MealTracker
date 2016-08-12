@@ -14,11 +14,14 @@ import {CalorieCountPipe} from "./calorie-count.pipe";
   template:
   `
     <div class="meal-list">
-      <select (change)="onChange($event.target.value)">
-        <option selected="selected" value="all">Show All</option>
-        <option value="lessThan500">Less Than 500 Calories</option>
-        <option value="moreThan500">More Than 500 Calories</option>
-      </select>
+      <div>
+        <h2>Viewing Options</h2>
+        <select (change)="onChange($event.target.value)">
+          <option selected="selected" value="all">Show All</option>
+          <option value="lessThan500">Less Than 500 Calories</option>
+          <option value="moreThan500">More Than 500 Calories</option>
+        </select>
+      </div>
       <meal-display *ngFor="#currentMeal of mealList | calorieCount:selectedCalories" (click)="mealClicked(currentMeal)" [meal]="currentMeal"></meal-display>
       <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
       <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal>

@@ -12,6 +12,7 @@ import {Meal} from "./meal.model";
       <h3 class="col-xs-4">Less than 500 calories?<input checked type="checkbox" *ngIf="meal.calorieCount === true" (click)="toggleCalorieCount(false)"/>
       <input type="checkbox" *ngIf="meal.calorieCount === false" (click)="toggleCalorieCount(true)"/></h3>
       <h3 class="col-xs-5">{{meal.notes}}</h3>
+      <button class="btn btn-warning">Edit</button>
     </div>
   `
 })

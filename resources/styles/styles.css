@@ -17,6 +17,10 @@ body {
   margin-top: 50px;
 }
 
+.meal-list h2 {
+  text-align: center;
+}
+
 .meal-list select {
   display: block;
   margin-left: auto;
