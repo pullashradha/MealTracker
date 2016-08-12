@@ -28,11 +28,11 @@ No known bugs.
 
 The program should... | Example Input | Example Output
 ----- | ----- | -----
-Input name, calories & notes for each meal | --- | ---
+Input name, calories & notes for each new meal | --- | ---
+Update meal entry (name, calories & notes) when meal is clicked on | --- | ---
 View all meals | --- | ---
 View all meals less than 500 calories | --- | ---
 View all meals more than 500 calories | --- | ---
-Update meal entry (name, calories & notes) when meal is clicked on | --- | ---
 
 ## Future Features
 
