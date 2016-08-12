@@ -6,11 +6,11 @@
 
 ## Description
 
-This program is a web app that allows a user to track their meals for the day. The user can input the name of the food, calories, and any notes regarding each meal. This program allows for basic data manipulation such as: editing a meal entry, and viewing foods within a specified calorie range.
+This program is a web app that allows a user to track their meals for the day. The user can input the name of the food, calories, and any notes regarding each meal. This program allows for basic data manipulation such as: editing a meal entry, and viewing all meals within a calorie range (<500 or >500 calories).
 
 ## Setup/Installation Requirements
 
-This program can only be accessed on computer with Git and Atom software and npm, bower, gulp, and typescript globally installed.
+This program can only be accessed on computer with Git, Atom, npm, bower, gulp, and typescript globally installed.
 
 * Clone this repository
 * To set up package managers, type the following into the command line:
@@ -28,9 +28,9 @@ No known bugs.
 
 The program should... | Example Input | Example Output
 ----- | ----- | -----
-Input name, calories & notes for each new meal | --- | ---
-Update a meal entry (name, calories & notes) when meal is clicked on | --- | ---
-View all meals | --- | ---
+Input name, calories & notes for each new meal | Meals: 0, Create New Meal: "Cheesecake", 550, "It was delicious, and it's made of milk so it has to be healthy!" | Meals: 1
+Update a meal entry (name, calories & notes) when meal details are clicked | Cheesecake: Calories = 550, click on "Calories = 550" | Cheesecake: Calories = 450
+View all meals | Meals: 2 | Meal Tracker: Apple Pie, Cheesecake
 View all meals less than 500 calories | --- | ---
 View all meals more than 500 calories | --- | ---
 
@@ -38,9 +38,9 @@ View all meals more than 500 calories | --- | ---
 
 HTML | CSS | JavaScript/Angular2
 ----- | ----- | -----
---- | Add space between meal-list & new-meal form | Edit meal form will disappear once the Done button is clicked
---- | --- | Add button to edit individual meal, instead of entire entry being clickable
---- | --- | Add button to delete meal from list
+--- | Add space between meal-list & new-meal form | Make edit-meal form disappear once the Done button (new) is clicked
+--- | --- | Add a button to edit individual meals, instead of the entire entry being clickable
+--- | --- | Add a button to delete one meal from the list
 
 ## Support and Contact Details
 
