@@ -11,7 +11,7 @@ import {Meal} from "./meal.model";
       <h3>Name<input #mealName/></h3>
       <h3>Calories<input #mealCalories/></h3>
       <h3>Notes<textarea #mealNotes></textarea></h3>
-      <button (click)="addMeal(mealName, mealCalories, mealNotes)" class="btn-success"></button>
+      <button (click)="addMeal(mealName, mealCalories, mealNotes)" class="btn-success">Submit</button>
     </div>
   `
 })
