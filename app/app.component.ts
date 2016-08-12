@@ -1,6 +1,5 @@
 import {Component} from "angular2/core";
 import {Meal} from "./meal.model";
-import {MealComponent} from "./meal.component";
 import {MealListComponent} from "./meal-list.component";
 
 @Component ({
@@ -8,8 +7,10 @@ import {MealListComponent} from "./meal-list.component";
   directives: [MealListComponent],
   template:
   `
-    <h1>Meal List</h1>
-    <meal-list mealList="meals"></meal-list>
+    <div>
+      <h1>Meal List</h1>
+      <meal-list [mealList]="meals"></meal-list>
+    </div>
   `
 })
 
