@@ -6,13 +6,13 @@ import {Meal} from "./meal.model";
   outputs: ["onSubmitNewMeal"],
   template:
   `
-    <div class="new-meal">
+    <form class="new-meal form-group">
       <h2>Create New Meal</h2>
-      <h3>Name<input #mealName/></h3>
-      <h3>Calories<input #mealCalories/></h3>
-      <h3>Notes<textarea #mealNotes></textarea></h3>
-      <button (click)="addMeal(mealName, mealCalories, mealNotes)" class="btn-success">Submit</button>
-    </div>
+      <h3 class="col-xs-6">Name<input required #mealName class="form-control"/></h3>
+      <h3 class="col-xs-6">Calories<input required #mealCalories class="form-control"/></h3>
+      <h3>Notes<textarea required #mealNotes class="form-control"></textarea></h3>
+      <button (click)="addMeal(mealName, mealCalories, mealNotes)" type="submit" class="btn btn-success">Submit</button>
+    </form>
   `
 })
 

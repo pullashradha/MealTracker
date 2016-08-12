@@ -36,9 +36,11 @@ View all meals more than 500 calories | --- | ---
 
 ## Future Features
 
-HTML | CSS | JavaScript
+HTML | CSS | JavaScript/Angular2
 ----- | ----- | -----
-Example Feature 1 | Example Feature 1 | Example Feature 1
+--- | Add space between meal-list & new-meal form | Edit meal form will disappear once the Done button is clicked
+--- | --- | Add button to edit individual meal, instead of entire entry being clickable
+--- | --- | Add button to delete meal from list
 
 ## Support and Contact Details
 

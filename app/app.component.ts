@@ -8,7 +8,7 @@ import {MealListComponent} from "./meal-list.component";
   template:
   `
     <div class="my-app">
-      <h1>Meal List</h1>
+      <h1 class="page-header">Meal Tracker</h1>
       <meal-list [mealList]="meals"></meal-list>
     </div>
   `

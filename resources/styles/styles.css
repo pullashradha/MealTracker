@@ -3,3 +3,32 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
+
+.page-header {
+  text-align: center;
+  font-size: 50pt;
+}
+
+.meal {
+  text-align: center;
+}
+
+.meal-list {
+  margin-top: 50px;
+}
+
+.new-meal, .edit-meal {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.new-meal .btn-success {
+  font-size: 18pt;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.edit-meal {
+  margin-bottom: 150px;
+}
