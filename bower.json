@@ -1,7 +1,6 @@
 {
-  "name": "",
+  "name": "MealTracker",
   "description": "",
-  "main": "index.js",
   "license": "ISC",
   "homepage": "",
   "ignore": [
@@ -17,7 +16,4 @@
     "moment": "^2.14.1"
   },
   "private": true,
-  "authors": [
-    "Shradha Pulla <pullashradha@gmail.com>"
-  ]
 }
