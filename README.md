@@ -10,7 +10,7 @@ This program is a web app that allows a user to track their meals for the day. T
 
 ## Setup/Installation Requirements
 
-This program can only be accessed on computer with Git and Atom software and npm, bower, and gulp globally installed.
+This program can only be accessed on computer with Git and Atom software and npm, bower, gulp, and typescript globally installed.
 
 * Clone this repository
 * To set up package managers, type the following into the command line:
