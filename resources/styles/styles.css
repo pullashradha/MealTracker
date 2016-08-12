@@ -17,6 +17,13 @@ body {
   margin-top: 50px;
 }
 
+.meal-list select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
 .new-meal, .edit-meal {
   text-align: center;
   margin-left: 100px;
