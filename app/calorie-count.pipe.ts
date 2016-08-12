@@ -9,21 +9,21 @@ import {Meal} from "./meal.model";
 export class CalorieCountPipe implements PipeTransform {
   transform = function (input: Meal[], info) {
     var desiredCalories = info[0];
-    var output: Meal[] = [];
+    var outputArray: Meal[] = [];
     if (desiredCalories === "lessThan500") {
       for (var i = 0; i < input.length; i ++) {
         if (input[i].calorieCount === true) {
-          output.push(input[i]);
+          outputArray.push(input[i]);
         }
       }
-      return output;
+      return outputArray;
     } else if (desiredCalories === "moreThan500") {
       for (var i = 0; i < input.length; i ++) {
         if (input[i].calorieCount === false) {
-          output.push(input[i]);
+          outputArray.push(input[i]);
         }
       }
-      return output;
+      return outputArray;
     } else {
       return input;
     }
