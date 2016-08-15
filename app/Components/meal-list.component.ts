@@ -1,9 +1,9 @@
 import {Component, EventEmitter} from "angular2/core";
-import {Meal} from "./meal.model";
-import {MealComponent} from "./meal.component";
-import {NewMealComponent} from "./new-meal.component";
-import {EditMealComponent} from "./edit-meal.component";
-import {CalorieCountPipe} from "./calorie-count.pipe";
+import {Meal} from "../Models/meal.model";
+import {MealComponent} from "../Components/meal.component";
+import {NewMealComponent} from "../Components/new-meal.component";
+import {EditMealComponent} from "../Components/edit-meal.component";
+import {CalorieCountPipe} from "../Pipes/calorie-count.pipe";
 
 @Component ({
   selector: "meal-list",

@@ -1,6 +1,6 @@
 import {Component} from "angular2/core";
-import {Meal} from "./meal.model";
-import {MealListComponent} from "./meal-list.component";
+import {Meal} from "./Models/meal.model";
+import {MealListComponent} from "./Components/meal-list.component";
 
 @Component ({
   selector: "my-app",
