@@ -7,25 +7,32 @@ import {Meal} from "./meal.model";
 })
 
 export class CalorieCountPipe implements PipeTransform {
-  transform = function (input: Meal[], info) {
+  transform = function (inputMeal: Meal[], info) {
     var desiredCalories = info[0];
-    var outputArray: Meal[] = [];
+    var outputMealArray: Meal[] = [];
     if (desiredCalories === "lessThan500") {
-      for (var i = 0; i < input.length; i ++) {
-        if (input[i].calorieCount === true) {
-          outputArray.push(input[i]);
+      for (var i = 0; i < inputMeal.length; i ++) {
+        if (inputMeal[i].calories < 500) {
+          outputMealArray.push(inputMeal[i]);
         }
       }
-      return outputArray;
+      return outputMealArray;
+    } else if (desiredCalories === "500calories") {
+      for (var i = 0; i <inputMeal.length; i ++) {
+        if (inputMeal[i].calories === 500) {
+          outputMealArray.push(inputMeal[i]);
+        }
+      }
     } else if (desiredCalories === "moreThan500") {
-      for (var i = 0; i < input.length; i ++) {
-        if (input[i].calorieCount === false) {
-          outputArray.push(input[i]);
+      for (var i = 0; i < inputMeal.length; i ++) {
+        if (inputMeal[i].calories > 500) {
+          outputMealArray.push(inputMeal[i]);
         }
       }
-      return outputArray;
+      return outputMealArray;
     } else {
-      return input;
+      return inputMeal;
     }
+    return outputMealArray;
   }
 }

@@ -19,6 +19,7 @@ import {CalorieCountPipe} from "./calorie-count.pipe";
         <select (change)="onChange($event.target.value)">
           <option selected="selected" value="all">Show All</option>
           <option value="lessThan500">Less Than 500 Calories</option>
+          <option value="500calories">500 calories</option>
           <option value="moreThan500">More Than 500 Calories</option>
         </select>
       </div>

@@ -19,6 +19,7 @@ export class AppComponent {
   constructor() {
     this.meals = [
       new Meal("Apple Pie", 900, "It was Dutch apple pie."),
+      new Meal("Mini Mac & Cheese", 500, "4 types of cheeses!"),
       new Meal("Cheesecake", 450, "It was delicious, and it's made of milk so it has to be healthy!")
     ];
   }
