@@ -5,11 +5,4 @@ npm-debug.log
 bower_components/
 build/
 typings/
-app/Components/*.js
-app/Components/*.js.map
-app/Models/*.js
-app/Models/*.js.map
-app/Pipes/*.js
-app/Pipes/*.js.map
-app/*.js
-app/*.js.map
+app/
