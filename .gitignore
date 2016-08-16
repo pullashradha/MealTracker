@@ -7,3 +7,9 @@ build/
 typings/
 app/*.js
 app/*.js.map
+app/Components/*.js
+app/Components/*.js.map
+app/Models/*.js
+app/Models/*.js.map
+app/Pipes/*.js
+app/Pipes/*.js.map
