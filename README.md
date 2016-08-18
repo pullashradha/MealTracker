@@ -1,4 +1,4 @@
-# Meal Tracker Webpage
+# Meal Tracker
 
 #### Angular JS Independent Project for Epicodus, 08/12/2016
 
